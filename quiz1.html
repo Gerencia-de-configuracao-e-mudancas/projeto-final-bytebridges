@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">  <!-- CSS apenas do MENU -->
+    <link rel="stylesheet" href="quiz1.css">
+</head>
+
+    <title>Refletindo emoções</title>
+</head>
+
+    <body onclick="ocultarHeader()">
+    <!-- MENU -->
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">    
+            <img src=" " alt="">
+        </div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz1.html">Quiz - Ansiedade</a></li>
+            <li><a href="quiz2.html">Quiz - Depressão</a></li>
+            <li><a href="quiz3.html">Quiz - Bem-estar</a></li>
+            
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <!-- HEADER -->
+<header id="cabecalho">
+    <div>
+        <p>Esse quiz avalia a ansiedade com o GAD-7, um questionário padronizado usado em ambientes clínicos e de pesquisa. Reflita sobre cada pergunta e as responda honestamente.<br>A ansiedade é a resposta do nosso corpo ao estresse em relação a eventos futuros. Entenda seu nível de ansiedade com esse quiz.</p>
+        <a href="https://www.uofmhealth.org/health-library/abn2339"link>Fonte: Michigan Medicine<br><br></a>
+        <button id="comecarQuiz" onclick="iniciarQuiz()">Começar Quiz</button>
+        <p>*O quiz possui propósitos educacionais.</p>
+    </div> 
+</header>
+
+ <!-- QUIZ -->
+    <div id="quiz">
+        <div id="pergunta1">
+            <h1>Nas duas últimas semanas...</h1>
+            <h2>Você se sentiu nervoso, ansioso ou "chegou no seu limite"?</h2>
+            <div class="r1"><input type="radio" name="q1" value="0"> Não</div>
+            <div class="r2"><input type="radio" name="q1" value="1"> Sim, durante alguns dias</div>
+            <div class="r3"><input type="radio" name="q1" value="2"> Sim, em mais da metade dos dias</div>
+            <div class="r4"><input type="radio" name="q1" value="3"> Sim, praticamente todos os dias</div>
+            <button onclick="proximaPergunta(1)">Próxima Pergunta</button>
+        </div>
+
+        <div id="pergunta2" style="display: none;">
+            <h1>Nas duas últimas semanas...</h1>
+            <h2>Você se preocupou muito e/ou se sentiu incapaz de controlar essas preocupações?</h2>
+            <div class="r1"><input type="radio" name="q2" value="0"> Não</div>
+            <div class="r2"><input type="radio" name="q2" value="1"> Sim, durante alguns dias</div>
+            <div class="r3"><input type="radio" name="q2" value="2"> Sim, em mais da metade dos dias</div>
+            <div class="r4"><input type="radio" name="q2" value="3"> Sim, praticamente todos os dias</div>
+            <button onclick="proximaPergunta(2)">Próxima Pergunta</button>
+        </div>
+
+        <div id="pergunta3" style="display: none;">
+            <h1>Nas duas últimas semanas...</h1>
+            <h2>Você teve problemas para relaxar?</h2>
+            <div class="r1"><input type="radio" name="q3" value="0"> Não</div>
+            <div class="r2"><input type="radio" name="q3" value="1"> Sim, durante alguns dias</div>
+            <div class="r3"><input type="radio" name="q3" value="2"> Sim, em mais da metade dos dias</div>
+            <div class="r4"><input type="radio" name="q3" value="3"> Sim, praticamente todos os dias</div>
+            <button onclick="proximaPergunta(3)">Próxima Pergunta</button>
+        </div>
+
+        <div id="pergunta4" style="display: none;">
+            <h1>Nas duas últimas semanas...</h1>
+            <h2>Você se sentiu tão inquieto a ponto de ser difícil ficar parado</h2>
+            <div class="r1"><input type="radio" name="q4" value="0"> Não</div>
+            <div class="r2"><input type="radio" name="q4" value="1"> Sim, durante alguns dias</div>
+            <div class="r3"><input type="radio" name="q4" value="2"> Sim, em mais da metade dos dias</div>
+            <div class="r4"><input type="radio" name="q4" value="3"> Sim, praticamente todos os dias</div>
+            <button onclick="proximaPergunta(4)">Próxima Pergunta</button>
+        </div>
+
+        <div id="pergunta5" style="display: none;">
+            <h1>Nas duas últimas semanas...</h1>
+            <h2>Você se sentiu facilmente entediado ou irritado?</h2>
+            <div class="r1"><input type="radio" name="q5" value="0"> Não</div>
+            <div class="r2"><input type="radio" name="q5" value="1"> Sim, durante alguns dias</div>
+            <div class="r3"><input type="radio" name="q5" value="2"> Sim, em mais da metade dos dias</div>
+            <div class="r4"><input type="radio" name="q5" value="3"> Sim, praticamente todos os dias</div>
+            <button onclick="proximaPergunta(5)">Próxima Pergunta</button>
+        </div>
+
+        <div id="pergunta6" style="display: none;">
+            <h1>Nas duas últimas semanas...</h1>
+            <h2>Você sentiu medo como se algo ruim pudesse acontecer?</h2>
+            <div class="r1"><input type="radio" name="q6" value="0"> Não</div>
+            <div class="r2"><input type="radio" name="q6" value="1"> Sim, durante alguns dias</div>
+            <div class="r3"><input type="radio" name="q6" value="2"> Sim, em mais da metade dos dias</div>
+            <div class="r4"><input type="radio" name="q6" value="3"> Sim, praticamente todos os dias</div>
+            <button onclick="proximaPergunta(6)">Próxima Pergunta</button>
+        </div>
+
+        <div id="pergunta7" style="display: none;">
+            <h1>Nas duas últimas semanas...</h1>
+            <h2>O quão difícil foi/é trabalhar, estudar, cuidar das coisas em casa  e de si ou conviver com outras pessoas, passando por esses problemas?</h2>
+            <div class="r1"><input type="radio" name="q7" value="0"> Nenhuma dificuldade</div>
+            <div class="r2"><input type="radio" name="q7" value="1"> Um pouco difícil</div>
+            <div class="r3"><input type="radio" name="q7" value="2"> Muito difícil</div>
+            <div class="r4"><input type="radio" name="q7" value="3"> Extremamente difícil</div>
+            <button onclick="proximaPergunta(7)">Próxima Pergunta</button>
+        </div>
+    
+        <div id="resultado" style="display: none;">
+            <h2>Resultado</h2>
+            <p id="mensagem"></p>
+            <p id="pontuacao"></p>
+
+             <!-- MENSAGENS -->
+        <div id="mensagem-none" style="display: none;">
+            <p>Ansiedade leve: seus níveis de ansiedade recente estão dentro de limites saudáveis.<br>Algumas dicas rápidas ainda podem ser úteis quando você se sentir ansioso:<br>Faça exercícios de respiração;<br>Escreva sobre o seu dia;<br>Acolha-se, assim como se acolhe um amigo.</p>
+            </div>
+            
+        <div id="mensagem-leve" style="display: none;">
+            <p>Há indícios de ansiedade moderada: seus níveis de ansiedade recente estão dentro de limites saudáveis.<br>Algumas dicas rápidas ainda podem ser úteis quando você se sentir ansioso:<br>Faça exercícios de respiração;<br>Escreva sobre o seu dia;<br>Acolha-se, assim como se acolhe um amigo.</p>
+            </div>
+            
+        <div id="mensagem-moderada" style="display: none;">
+            <p>Há indícios de ansiedade moderadamente grave: seus níveis recentes de ansiedade estão dentro da faixa recomendada para consultar um médico.<br>Algumas dicas rápidas para gerenciar a ansiedade nesse momento:<br>Faça exercícios de respiração;<br>Escreva sobre o seu dia;<br>Acolha-se, assim como se acolhe um amigo.</p>
+            </div>
+            
+        <div id="mensagem-severa" style="display: none;">
+            <p>Há indícios de ansiedade severa: seus níveis recentes de ansiedade estão dentro da faixa recomendada para consultar um médico.<br>Algumas dicas rápidas para gerenciar a ansiedade nesse momento:<br>Faça exercícios de respiração;<br>Escreva sobre o seu dia;<br>Acolha-se, assim como se acolhe um amigo.</p>
+            </div>
+            </div> 
+        </div>
+        
+    <!-- JS-RESULTADO -->
+    <script>
+        var pontuacaoTotal = 0;
+    
+        function ocultarHeader() {
+            document.querySelector('#cabecalho').style.display = 'none';
+        }
+
+        function iniciarQuiz() {
+            document.querySelector('#comecarQuiz').style.display = 'none';
+            document.querySelector('#quiz').style.display = 'block'; 
+        }
+        function proximaPergunta(numeroPergunta) {
+            var perguntaAtual = document.querySelector('#pergunta' + numeroPergunta);
+            var proximaPergunta = document.querySelector('#pergunta' + (numeroPergunta + 1));
+            
+            if (perguntaAtual) {
+                perguntaAtual.style.display = 'none'; 
+                var respostas = document.querySelector('input[name="q' + numeroPergunta + '"]:checked');
+                if (respostas) {
+                    pontuacaoTotal += parseInt(respostas.value);
+                }
+            }
+
+            if (proximaPergunta) {
+                proximaPergunta.style.display = 'block'; 
+            } else {
+                calcularPontuacao();
+            }
+        }
+
+        function calcularPontuacao() {
+            var mensagem = "";
+            var pontuacao = pontuacaoTotal;
+
+            if (pontuacao >= 0 && pontuacao <= 4) {
+                exibirMensagem('mensagem-none');
+            } else if (pontuacao >= 5 && pontuacao <= 9) {
+                exibirMensagem('mensagem-leve');
+            } else if (pontuacao >= 10 && pontuacao <= 14) {
+                exibirMensagem('mensagem-moderada');
+            } else if (pontuacao >= 15 && pontuacao <= 21) {
+                exibirMensagem('mensagem-severa');
+            }
+
+            document.querySelector('#resultado').style.display = 'block';
+            document.querySelector('#pontuacao').innerText = "Pontuação total: " + pontuacao + "/21"+"\nLembre-se de que o quiz é apenas para fins educacionais. Você não deve tratar o resultado como um diagnóstico.";
+        }
+        function exibirMensagem(mensagemId) {
+            document.querySelector('#mensagem-none').style.display = 'none';
+            document.querySelector('#mensagem-leve').style.display = 'none';
+            document.querySelector('#mensagem-moderada').style.display = 'none';
+            document.querySelector('#mensagem-severa').style.display = 'none';
+            document.getElementById(mensagemId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
