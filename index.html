@@ -7,16 +7,45 @@
     <link rel="stylesheet" href="style.css"> <!-- CSS apenas do MENU -->
     <title>Refletindo emoções</title>
 </head>
+<style>
+    header{
+        overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    min-height: 94vh;
+    padding: 10px; 
+    margin: 0; 
+    font-size: 20px;
+    background-image: url('img/header.png');
+    background-position-x: center;
+    background-repeat:round;
+}
+.box {
+        background-color:antiquewhite;
+        width: 580px;
+        height: 280px;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-top: 17%;
+    }
 
+    .box p {
+        text-align: justify;
+        width: 100%;
+        margin: 20px;
+    }
+</style>
 <body>
     <!-- MENU -->
     <nav>
         <input id="nav-toggle" type="checkbox">   
-        <div class="logo">  <!-- Logo na lateral direita do menu -->
-            <img src=" " alt="">
+        <div class="logo">  <!-- Logo na lateral esquerda do menu -->
+            <img src="img/" alt="">  <!-- add caminho da imagem aqui e nas outras paginas tbm -->
         </div>
         <ul class="links">
-            <li><a href="index.html">Home</a></li>
             <li><a href="quiz1.html">Quiz - Ansiedade</a></li>
             <li><a href="quiz2.html">Quiz - Depressão</a></li>
             <li><a href="quiz3.html">Quiz - Bem-estar</a></li>
@@ -31,7 +60,11 @@
 
     <!-- HEADER -->
     <header id="showcase" class="grid">
-
+<div class="box">
+    <p>Lorem ipsum dolor sit amet. In voluptatem eius aut voluptas quia<br>
+         eos eius dolor qui vitae maxime aut molestiae voluptatem.<br>
+         Sed dicta deserunt ad nisi eligendi cum unde illo ea possimus<br>voluptatibus.</p>
+</div>
     </header>
 </body>
 
