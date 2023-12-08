@@ -5,7 +5,8 @@ body {
     padding-top: 100px; 
     overflow: hidden;
     background: #F5E258;
-  }
+
+}
 header {
     display: flex;
     flex-direction: column;
@@ -15,4 +16,26 @@ header {
     min-height: 100vh;
     padding: 10px; 
     margin: 0;
+}
+#quiz {
+    display: flex;
+    flex-direction: column;
+}
+
+.r1, .r2, .r3, .r4{
+    background: #F5BC56;
+    border: 1px solid #F5D058;
+    margin: 15px 90px;
+    
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    font: normal 30px Comic Sans MS, Comic Sans, cursive;
+}
+
+h1{
+    font: normal 40px Arial;
+}
+h2{
+    font: normal 30px Arial;
 }
