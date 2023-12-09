@@ -227,4 +227,20 @@ nav .logo {
       vertical-align: middle;
     } 
     
+    /*Resultado*/
     
+    #resultado h2{
+      font: normal 40px Arial;
+      font-weight: bold;
+    }
+    
+    .mensagens p, #pontuacao{
+      font: normal 30px Arial;
+      margin-left: 5%;
+      margin-right: 5%;
+      line-height: 1.5;
+    }
+    
+    #pontuacao{
+      font-weight: bold;
+    }
