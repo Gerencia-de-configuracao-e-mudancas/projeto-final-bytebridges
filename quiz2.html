@@ -35,10 +35,12 @@
     <!-- HEADER -->
 <header id="cabecalho">
     <div>
-        <p>Esse quiz avalia sintomas depressivos com o PHQ-9, um questionário padronizado usado em ambientes clínicos e de pesquisa. Reflita sobre cada pergunta e as responda honestamente.<br>A depressão pode passar desapercebida por anos. Cuide-se sempre e monitore sua saúde mental!</p>
+        <div id="p-cabecalho">
+            <p>Esse quiz avalia sintomas depressivos com o PHQ-9, um questionário padronizado usado em ambientes clínicos e de pesquisa. Reflita sobre cada pergunta e as responda honestamente.<br>A depressão pode passar desapercebida por anos. Cuide-se sempre e monitore sua saúde mental!</p>
+        </div>     
         <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/"link>Fonte: PubMed Central<br><br></a>
         <button id="comecarQuiz" onclick="iniciarQuiz()">Começar Quiz</button>
-        <p>*O quiz possui propósitos educacionais.</p>
+        <p id="p-descritivo">*O quiz possui propósitos educacionais.</p>
     </div>  
 </header>
 
@@ -140,19 +142,19 @@
             <p id="pontuacao"></p>
             
                 <!-- MENSAGENS -->
-        <div id="mensagem-none" style="display: none;">
+        <div id="mensagem-none" style="display: none;" class="mensagens">
             <p>Não há indícios de depressão! Por enquanto é bom estar ciente de alguns sinais iniciais sutis de transtornos depressivos:<br>Perca de interesse em fazer coisas que você gosta;<br>Ter problemas para dormir/dormir demais;<br>Mudanças no apetite sem razões aparentes.</p>
             </div>
         
-        <div id="mensagem-leve" style="display: none;">
+        <div id="mensagem-leve" style="display: none;" class="mensagens">
             <p>Há indícios leves de depressão: sintomas depressivos leves geralmente não requerem tratamento, mas pode ser bom refazer este teste em 2 semanas para se manter vigilante. É bom estar ciente de alguns sinais iniciais sutis de transtornos depressivos:<br>Perca de interesse em fazer coisas que você gosta;<br>Ter problemas para dormir/dormir demais;<br>Mudanças no apetite sem razões aparentes.</p>
             </div>
         
-        <div id="mensagem-moderada" style="display: none;">
+        <div id="mensagem-moderada" style="display: none;" class="mensagens">
             <p>Com base na sua pontuação, é recomendável buscar um diagnóstico adequado de um profissional de saúde mental.<br>Dados revelam que demora cerca de 11 anos para que alguém procure tratamento psicológico.<br>Acolha-se, assim como se acolhe um amigo. Procure ajuda!</p>
             </div>
         
-        <div id="mensagem-severa" style="display: none;">
+        <div id="mensagem-severa" style="display: none;" class="mensagens">
             <p>Com base na sua pontuação, é recomendável buscar um diagnóstico adequado de um profissional de saúde mental.<br>Dados revelam que demora cerca de 11 anos para que alguém procure tratamento psicológico.<br>Acolha-se, assim como se acolhe um amigo. Procure ajuda!</p>
             </div>
         </div> 

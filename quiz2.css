@@ -7,6 +7,10 @@ body {
     background: #F5E258;
 
 }
+
+
+
+/*Página inicial do quiz*/
 header {
     display: flex;
     flex-direction: column;
@@ -17,21 +21,6 @@ header {
     padding: 10px; 
     margin: 0;
 }
-#quiz {
-    display: flex;
-    flex-direction: column;
-}
-
-.r1, .r2, .r3, .r4{
-    background: #F5BC56;
-    border: 1px solid #F5D058;
-    margin: 15px 90px;
-    
-    text-align: center;
-    font-size: 30px;
-    padding: 5px;
-    font: normal 30px Comic Sans MS, Comic Sans, cursive;
-}
 
 h1{
     font: normal 40px Arial;
@@ -39,3 +28,73 @@ h1{
 h2{
     font: normal 30px Arial;
 }
+
+p{
+    font: normal 30px Comic Sans MS, Comic Sans, cursive;
+}
+
+#p-descritivo{
+    font:normal 15px Arial;
+}
+
+a:active{
+    color: #F5BC56;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color:  #F5E258;
+    font-size: 20px;
+}
+
+button{
+    background: #E09528;
+    border:1px solid black;
+    border-radius: 8px; 
+    padding: 5px;
+    font-size: 15px;
+    
+}
+
+button:hover{
+    font-size: 20px;
+}
+
+/*QUIZ*/
+#quiz {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.r1, .r2, .r3, .r4{
+    background: #F5BC56;
+    border: 1px solid #E09528;
+    margin: 15px 90px;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    font: normal 30px Comic Sans MS, Comic Sans, cursive;
+}
+
+/*Resultado*/
+
+#resultado h2{
+    font: normal 40px Arial;
+    font-weight: bold;
+}
+
+.mensagens p, #pontuacao{
+    font: normal 30px Arial;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.5;
+}
+
+#pontuacao{
+    font-weight: bold;
+}
+
