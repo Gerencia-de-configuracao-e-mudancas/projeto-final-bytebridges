@@ -4,7 +4,7 @@ body {
   padding: 0;
   padding-top: 100px; 
   overflow: hidden;
-  background: #F5E258;
+  background: linear-gradient(to right, #53afec, #006edc);
   overflow-y: scroll;
   overflow-x: hidden;
   display: flex;
@@ -23,7 +23,7 @@ top: 0;
 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 padding: 0 5%;
 height: 60px;
-background:#f8e9e9;
+background:#eae9f8;
 border-bottom: 2px solid #f5b1ae;
 }
 nav .logo {
@@ -155,7 +155,7 @@ nav .logo {
     }
     
     a:active{
-      color: #F5BC56;
+      color: #2326dd;
     }
     
     a{
@@ -163,12 +163,12 @@ nav .logo {
     }
     
     a:hover{
-      background-color:  #F5E258;
+      background-color:  #2326dd;
       font-size: 20px;
     }
     
     button{
-      background: #E09528;
+      background: #2326dd;
       border:1px solid black;
       border-radius: 8px; 
       padding: 5px;
@@ -200,8 +200,8 @@ nav .logo {
     }
     
     .r1, .r2, .r3, .r4{
-      background: #F5BC56;
-      border: 1px solid #E09528;
+      background: #2326dd;
+      border: 1px solid #020280;
       margin: 15px 90px;
       text-align: center;
       font-size: 30px;
