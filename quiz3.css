@@ -132,7 +132,7 @@ header {
     min-height: 100vh;
     padding: 10px; 
     margin-bottom: 200px;
-    margin-top: -7%;
+    margin-top: -8%;
 }
 
 h1{
@@ -143,15 +143,15 @@ h2{
 }
 
 p{
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 7%;
     margin-right: 7%;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
 #p-descritivo{
     font:normal 20px Arial;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 
@@ -176,4 +176,55 @@ button:hover{
 
 #cabecalho h2{
     margin-bottom:  100px;
+    font-weight: bold;
+}
+
+/*QUIZ*/
+#quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+
+.r1, .r2, .r3, .r4, .r5{
+    background: #50E626;
+    margin: 15px 90px;
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    font: normal 30px Comic Sans MS, Comic Sans, cursive;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.perguntas h2{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+input[type=radio] {
+    border: 0px;
+    width: 25px;
+    height: 30px;
+    vertical-align: middle;
+} 
+
+/*Resultado*/
+
+#resultado h2{
+    font: normal 40px Arial;
+    font-weight: bold;
+}
+
+.mensagens p, #pontuacao{
+    font: normal 30px Arial;
+    margin-left: 5%;
+    margin-right: 5%;
+    line-height: 1.5;
+}
+
+#pontuacao{
+    font-weight: bold;
 }
