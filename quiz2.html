@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">  <!-- CSS apenas do MENU -->
-    <link rel="stylesheet" href="quiz1.css">
+    <link rel="stylesheet" href="quiz2.css">
 </head>
 
 <title>Refletindo emoções</title>
@@ -16,7 +16,7 @@
     <nav>
         <input id="nav-toggle" type="checkbox">
         <div class="logo">    
-            <img src=" " alt="">
+            <img src="img/logo pronta.png" alt="">
         </div>
         <ul class="links">
             <li><a href="index.html">Home</a></li>
@@ -35,16 +35,19 @@
     <!-- HEADER -->
 <header id="cabecalho">
     <div>
-        <p>Esse quiz avalia sintomas depressivos com o PHQ-9, um questionário padronizado usado em ambientes clínicos e de pesquisa. Reflita sobre cada pergunta e as responda honestamente.<br>A depressão pode passar desapercebida por anos. Cuide-se sempre e monitore sua saúde mental!</p>
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/"link>Fonte: PubMed Central<br><br></a>
+        <img src="img/montanha_318-494459.avif">
+        <h2>Quiz Depressão</h2>
+        <div id="p-cabecalho">
+            <p>Esse quiz avalia sintomas depressivos com o PHQ-9, um questionário padronizado usado em ambientes clínicos e de pesquisa. Reflita sobre cada pergunta e as responda honestamente.<br>A depressão pode passar desapercebida por anos. Cuide-se sempre e monitore sua saúde mental!</p>
+        </div>     
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/"link>Fonte: PubMed Central (*O quiz possui propósitos educacionais.)<br><br></a>
         <button id="comecarQuiz" onclick="iniciarQuiz()">Começar Quiz</button>
-        <p>*O quiz possui propósitos educacionais.</p>
     </div>  
 </header>
 
  <!-- QUIZ -->
-    <div id="quiz">
-        <div id="pergunta1">
+    <div id="quiz" >
+        <div id="pergunta1" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>Você sentiu pouco interesse/prazer em fazer suas atividades?</h2>
             <div class="r1"><input type="radio" name="q1" value="0"> Não</div>
@@ -54,7 +57,7 @@
             <button onclick="proximaPergunta(1)">Próxima Pergunta</button>
         </div>
 
-        <div id="pergunta2" style="display: none;">
+        <div id="pergunta2" style="display: none;" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>Você se sentiu pra baixo ou sem esperanças?</h2>
             <div class="r1"><input type="radio" name="q2" value="0"> Não</div>
@@ -62,9 +65,10 @@
             <div class="r3"><input type="radio" name="q2" value="2"> Sim, em mais da metade dos dias</div>
             <div class="r4"><input type="radio" name="q2" value="3"> Sim, praticamente todos os dias</div>
             <button onclick="proximaPergunta(2)">Próxima Pergunta</button>
+            
         </div>
 
-        <div id="pergunta3" style="display: none;">
+        <div id="pergunta3" style="display: none;" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>Você teve problemas para dormir ou sentiu muito sono?</h2>
             <div class="r1"><input type="radio" name="q3" value="0"> Não</div>
@@ -74,7 +78,7 @@
             <button onclick="proximaPergunta(3)">Próxima Pergunta</button>
         </div>
 
-        <div id="pergunta4" style="display: none;">
+        <div id="pergunta4" style="display: none;" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>Você se sentiu cansado ou com pouca energia?</h2>
             <div class="r1"><input type="radio" name="q4" value="0"> Não</div>
@@ -84,7 +88,7 @@
             <button onclick="proximaPergunta(4)">Próxima Pergunta</button>
         </div>
 
-        <div id="pergunta5" style="display: none;">
+        <div id="pergunta5" style="display: none;" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>Você ficou sem apetite ou sentiu fome demais?</h2>
             <div class="r1"><input type="radio" name="q5" value="0"> Não</div>
@@ -94,7 +98,7 @@
             <button onclick="proximaPergunta(5)">Próxima Pergunta</button>
         </div>
 
-        <div id="pergunta6" style="display: none;">
+        <div id="pergunta6" style="display: none;" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>Você chegou a pensar que é um fracasso e/ou uma vergonha para sua família ou para si?</h2>
             <div class="r1"><input type="radio" name="q6" value="0"> Não</div>
@@ -104,7 +108,7 @@
             <button onclick="proximaPergunta(6)">Próxima Pergunta</button>
         </div>
 
-        <div id="pergunta7" style="display: none;">
+        <div id="pergunta7" style="display: none;" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>Você teve problemas para se concentrar nas suas atividades, mesmo as rotineiras?</h2>
             <div class="r1"><input type="radio" name="q7" value="0"> Não</div>
@@ -114,7 +118,7 @@
             <button onclick="proximaPergunta(7)">Próxima Pergunta</button>
         </div>
 
-        <div id="pergunta8" style="display: none;">
+        <div id="pergunta8" style="display: none;" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>Você pensou em machucar a si mesmo?</h2>
             <div class="r1"><input type="radio" name="q8" value="0"> Não</div>
@@ -124,7 +128,7 @@
             <button onclick="proximaPergunta(8)">Próxima Pergunta</button>
         </div>
 
-        <div id="pergunta9" style="display: none;">
+        <div id="pergunta9" style="display: none;" class="perguntas">
             <h1>Nas duas últimas semanas...</h1>
             <h2>O quão difícil foi/é trabalhar, estudar, cuidar das coisas em casa  e de si ou conviver com outras pessoas, passando por esses problemas?</h2>
             <div class="r1"><input type="radio" name="q9" value="0"> Nenhuma dificuldade</div>
@@ -140,19 +144,23 @@
             <p id="pontuacao"></p>
             
                 <!-- MENSAGENS -->
-        <div id="mensagem-none" style="display: none;">
+        <div id="mensagem-none" style="display: none;" class="mensagens">
+            <img src="img/felicidade.avif" alt="Feliz">
             <p>Não há indícios de depressão! Por enquanto é bom estar ciente de alguns sinais iniciais sutis de transtornos depressivos:<br>Perca de interesse em fazer coisas que você gosta;<br>Ter problemas para dormir/dormir demais;<br>Mudanças no apetite sem razões aparentes.</p>
             </div>
         
-        <div id="mensagem-leve" style="display: none;">
+        <div id="mensagem-leve" style="display: none;" class="mensagens">
+            <img src="img/umpoucofeliz.png" alt="Um pouco feliz">
             <p>Há indícios leves de depressão: sintomas depressivos leves geralmente não requerem tratamento, mas pode ser bom refazer este teste em 2 semanas para se manter vigilante. É bom estar ciente de alguns sinais iniciais sutis de transtornos depressivos:<br>Perca de interesse em fazer coisas que você gosta;<br>Ter problemas para dormir/dormir demais;<br>Mudanças no apetite sem razões aparentes.</p>
             </div>
         
-        <div id="mensagem-moderada" style="display: none;">
+        <div id="mensagem-moderada" style="display: none;" class="mensagens">
+            <img src="img/neutro.png" alt="Neutro">
             <p>Com base na sua pontuação, é recomendável buscar um diagnóstico adequado de um profissional de saúde mental.<br>Dados revelam que demora cerca de 11 anos para que alguém procure tratamento psicológico.<br>Acolha-se, assim como se acolhe um amigo. Procure ajuda!</p>
             </div>
         
-        <div id="mensagem-severa" style="display: none;">
+        <div id="mensagem-severa" style="display: none;" class="mensagens">
+            <img src="img/triste.png" alt="triste">
             <p>Com base na sua pontuação, é recomendável buscar um diagnóstico adequado de um profissional de saúde mental.<br>Dados revelam que demora cerca de 11 anos para que alguém procure tratamento psicológico.<br>Acolha-se, assim como se acolhe um amigo. Procure ajuda!</p>
             </div>
         </div> 
