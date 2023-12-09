@@ -122,6 +122,7 @@ nav .icon-burger .line {
 	
 }
 
+/*Página inicial do quiz*/
 header {
     display: flex;
     flex-direction: column;
@@ -130,5 +131,49 @@ header {
     width: 98%;
     min-height: 100vh;
     padding: 10px; 
-    margin: 0; 
+    margin-bottom: 200px;
+    margin-top: -7%;
+}
+
+h1{
+    font: normal 40px Arial;
+}
+h2{
+    font: normal 30px Arial;
+}
+
+p{
+    font-size: 25px;
+    margin-left: 7%;
+    margin-right: 7%;
+    line-height: 1.5;
+}
+
+#p-descritivo{
+    font:normal 20px Arial;
+    margin-top: 20%;
+}
+
+
+button{
+    background: #5DE532;
+    border:1px solid black;
+    border-radius: 8px; 
+    padding: 5px;
+    font-size: 15px;
+    
+}
+
+button:hover{
+    font-size: 20px;
+}
+
+#cabecalho img{
+    margin-bottom:  10px;
+    width: 100px;
+    height: 100px;
+}
+
+#cabecalho h2{
+    margin-bottom:  100px;
 }
