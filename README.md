@@ -39,6 +39,6 @@ Sinta-se à vontade para explorar, aprender mais sobre você mesmo e começar su
 
 | Nome                | Contatos                  |
 |---------------------|---------------------------|
-| Juciê Avelino       | [E-mail](mailto:maria@example.com) \| [GitHub](https://github.com/juciejunior) |
+| Juciê Avelino       | [E-mail](mailto:larissa.saraiva@academico.ifpb.edu.br) \| [GitHub](https://github.com/juciejunior) |
 | Larissa Saraiva     | [E-mail](mailto:jucie.junior@academico.ifpb.edu.br) \| [GitHub](https://github.com/lassaraiva) |
 | Rhuann Victor       | [E-mail](mailto:rhuann.nunes@academico.ifpb.edu.br)  \| [Github](https://github.com/RhuannV) |
